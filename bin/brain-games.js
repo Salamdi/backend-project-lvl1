@@ -1,3 +1,8 @@
 #!/usr/bin/env node
-console.log("Welcome to the Brain Games!");
+
+import { greeter } from '../src/cli.js';
+
+console.log('Welcome to the Brain Games!');
+
+greeter();
 
