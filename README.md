@@ -3,4 +3,4 @@
 [![Actions Status](https://github.com/Salamdi/backend-project-lvl1/workflows/linter/badge.svg)](https://github.com/Salamdi/backend-project-lvl1/actions)
 
 
-[![asciicast](https://asciinema.org/a/qONYMkkCNLfOVlnLimzV9MWCQ.svg)](https://asciinema.org/a/qONYMkkCNLfOVlnLimzV9MWCQ)
+[![asciicast](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi.svg)](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi)
