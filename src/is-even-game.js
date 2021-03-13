@@ -16,16 +16,16 @@ const isEvenGame = () => {
     console.log(`Question: ${randNum}`);
     userAnswer = readlineSync.question('Your answer: ');
     isAnswerCorrect = correctAnswer === userAnswer;
-    count--;
+    count -= 1;
   } while (count && isAnswerCorrect);
   if (isAnswerCorrect) {
     console.log(`Congratulations, ${name}`);
   } else {
     console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${userAnswer === 'yes' ? 'no' : 'yes'}'.`
+      `'${userAnswer}' is wrong answer ;(. Correct answer was '${userAnswer === 'yes' ? 'no' : 'yes'}'.`,
     );
-    console.log(`Let\'s try again, ${name}!`);
+    console.log(`Let's try again, ${name}!`);
   }
-}
+};
 
 export default isEvenGame;
