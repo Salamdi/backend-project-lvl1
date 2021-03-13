@@ -6,3 +6,5 @@
 [brain-even](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi)
 
 [brain-calc](https://asciinema.org/a/9gLdU6ozwgYAXzQ2LPLTI0RA9)
+
+[brain-gcd](https://asciinema.org/a/90avH9yWCOYFDVeNFbHvgdHoV)
