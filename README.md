@@ -3,4 +3,6 @@
 [![Actions Status](https://github.com/Salamdi/backend-project-lvl1/workflows/linter/badge.svg)](https://github.com/Salamdi/backend-project-lvl1/actions)
 
 
-[![asciicast](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi.svg)](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi)
+[brain-even](https://asciinema.org/a/2CKtEclAhYW7mtlatqkNzIhRi)
+
+[brain-calc](https://asciinema.org/a/9gLdU6ozwgYAXzQ2LPLTI0RA9)
