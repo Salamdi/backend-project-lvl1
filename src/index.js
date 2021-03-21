@@ -8,7 +8,6 @@ export default (game) => {
   console.log(game.intro);
   let round = 0;
   do {
-    round += 1;
     const { question, answer } = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -20,6 +19,7 @@ export default (game) => {
       break;
     }
 
+    round += 1;
     console.log('Correct!');
   } while (round < LAST_ROUND);
   if (round < LAST_ROUND) {
