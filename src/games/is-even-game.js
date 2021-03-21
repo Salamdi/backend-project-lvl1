@@ -1,7 +1,8 @@
-import helper from '../helper.js';
+import play from '../index.js';
+import randomNumber from '../randomNumber.js';
 
 const isEven = () => {
-  const question = helper.randomNumber();
+  const question = randomNumber();
   const answer = question % 2 ? 'no' : 'yes';
 
   return { question, answer };
@@ -9,4 +10,4 @@ const isEven = () => {
 
 isEven.intro = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-export default isEven;
+export default () => play(isEven);

@@ -1,4 +1,5 @@
-import helper from '../helper.js';
+import play from '../index.js';
+import randomNumber from '../randomNumber.js';
 
 const isPrime = (n) => {
   if (n < 2) {
@@ -15,7 +16,7 @@ const isPrime = (n) => {
 };
 
 const isPrimeGame = () => {
-  const question = helper.randomNumber(1000, 1);
+  const question = randomNumber(1, 1000);
   const answer = isPrime(question) ? 'yes' : 'no';
 
   return { question, answer };
@@ -23,4 +24,4 @@ const isPrimeGame = () => {
 
 isPrimeGame.intro = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export default isPrimeGame;
+export default () => play(isPrimeGame);

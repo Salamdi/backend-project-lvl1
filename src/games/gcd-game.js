@@ -1,4 +1,5 @@
-import helper from '../helper.js';
+import play from '../index.js';
+import randomNumber from '../randomNumber.js';
 
 const gcd = (a, b) => {
   let max = a > b ? a : b;
@@ -12,8 +13,8 @@ const gcd = (a, b) => {
 };
 
 const gcdGame = () => {
-  const a = helper.randomNumber(200);
-  const b = helper.randomNumber(200);
+  const a = randomNumber(0, 200);
+  const b = randomNumber(0, 200);
   const question = `${a} ${b}`;
   const answer = gcd(a, b).toString(10);
 
@@ -22,4 +23,4 @@ const gcdGame = () => {
 
 gcdGame.intro = 'Find the greatest common divisor of given numbers.';
 
-export default gcdGame;
+export default () => play(gcdGame);

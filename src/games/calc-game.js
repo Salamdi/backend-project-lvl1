@@ -1,4 +1,5 @@
-import helper from '../helper.js';
+import play from '../index.js';
+import randomNumber from '../randomNumber.js';
 
 const mult = (a, b) => a * b;
 const add = (a, b) => a + b;
@@ -11,9 +12,9 @@ const ops = [
 ];
 
 const calcGame = () => {
-  const a = helper.randomNumber(100);
-  const b = helper.randomNumber(100);
-  const op = ops[helper.randomNumber(ops.length)];
+  const a = randomNumber(0, 100);
+  const b = randomNumber(0, 100);
+  const op = ops[randomNumber(0, ops.length)];
   const question = `${a} ${op.sym} ${b}`;
   const answer = op.act(a, b).toString(10);
   return { question, answer };
@@ -21,4 +22,4 @@ const calcGame = () => {
 
 calcGame.intro = 'What is the result of the expression?';
 
-export default calcGame;
+export default () => play(calcGame);
