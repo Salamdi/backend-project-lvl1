@@ -14,7 +14,7 @@ const ops = [
 const calcGame = () => {
   const a = randomNumber(0, 100);
   const b = randomNumber(0, 100);
-  const op = ops[randomNumber(0, ops.length -  1)];
+  const op = ops[randomNumber(0, ops.length - 1)];
   const question = `${a} ${op.sym} ${b}`;
   const answer = op.act(a, b).toString(10);
   return { question, answer };

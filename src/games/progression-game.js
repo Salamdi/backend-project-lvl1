@@ -12,7 +12,7 @@ const makeProgression = (n) => {
 const progressionGame = () => {
   const progressionLength = randomNumber(5, 10);
   const progression = makeProgression(progressionLength);
-  const hiddenIndex = randomNumber(0, progressionLength);
+  const hiddenIndex = randomNumber(0, progressionLength - 1);
   const answer = progression[hiddenIndex];
   progression[hiddenIndex] = '..';
   const question = progression.join(' ');
