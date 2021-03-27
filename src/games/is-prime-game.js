@@ -1,6 +1,8 @@
 import play from '../index.js';
 import randomNumber from '../randomNumber.js';
 
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (n) => {
   if (n < 2) {
     return false;
@@ -19,9 +21,7 @@ const isPrimeGame = () => {
   const question = randomNumber(1, 1000);
   const answer = isPrime(question) ? 'yes' : 'no';
 
-  return { question, answer };
+  return [question, answer];
 };
 
-isPrimeGame.intro = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-export default () => play(isPrimeGame);
+export default () => play(isPrimeGame, DESCRIPTION);

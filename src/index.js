@@ -3,12 +3,12 @@ import greeter from './cli.js';
 
 const LAST_ROUND = 3;
 
-export default (game) => {
+export default (game, description) => {
   const name = greeter();
-  console.log(game.intro);
+  console.log(description);
   let round = 0;
   do {
-    const { question, answer } = game();
+    const [question, answer] = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -16,15 +16,12 @@ export default (game) => {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`,
       );
-      break;
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
 
     round += 1;
     console.log('Correct!');
   } while (round < LAST_ROUND);
-  if (round < LAST_ROUND) {
-    console.log(`Let's try again, ${name}!`);
-  } else {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
